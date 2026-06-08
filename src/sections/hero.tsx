@@ -4,24 +4,27 @@ import { IoIosArrowForward } from "react-icons/io";
 export default function Hero() {
   return (
     <section
-      className="relative min-h-screen flex justify-center lg:justify-start items-center px-4 lg:px-20 text-white"
+      className="relative min-h-screen flex justify-center lg:justify-start items-center px-4 lg:px-30 text-white"
       style={{
         backgroundImage: `url(${heroImage})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
     >
-      <div className="lg:max-w-1/2 flex flex-col items-center text-center lg:text-start lg:items-start">
-        <h1 className="text-white text-4xl md:text-6xl font-black">
-          FIND YOUR LUXURY DREAM HOME
+      <div className="lg:max-w-2xl flex flex-col items-center text-center lg:text-start lg:items-start">
+        <h1 className="text-white text-4xl md:text-5xl font-light">
+          Switch Life to Artha
         </h1>
+        <h2 className="mt-1 text-white text-4xl md:text-3xl font-light uppercase">
+          Sweet home for your mind
+        </h2>
         <p className="mt-4 text-gray-300 max-w-xl leading-relaxed">
           Discover exclusive modern residences designed with elegance, comfort,
           and timeless architecture. Experience premium living spaces tailored
           to match your lifestyle and future aspirations.
         </p>
         <a href="#properties">
-          <button className="mt-6 cursor-pointer flex items-center gap-2 py-3 px-8 bg-primary rounded-lg text-white font-medium text-lg">
+          <button className="mt-6 cursor-pointer flex items-center gap-2 py-3 px-8 bg-tranparent border border-white text-white text-md hover:bg-primary hover:border hover:border-primary transition duration-200">
             Explore More <IoIosArrowForward />
           </button>
         </a>
