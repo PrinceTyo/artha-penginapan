@@ -5,6 +5,7 @@ import Amenities from "@/sections/amenities";
 import Location from "@/sections/location";
 import { roomData } from "@/lib/data/roomData";
 import { amenitiesData } from "@/lib/data/amenitiesData";
+import Cta from "@/sections/cta";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <Room {...roomData} />
       <Amenities {...amenitiesData} />
       <Location />
+      <Cta />
     </>
   );
 }
