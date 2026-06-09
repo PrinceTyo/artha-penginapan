@@ -1,4 +1,4 @@
-import heroImage from "@/assets/hero.png";
+import hero1 from "@/assets/hero.png";
 import { IoIosArrowForward } from "react-icons/io";
 
 export default function Hero() {
@@ -6,7 +6,7 @@ export default function Hero() {
     <section
       className="relative min-h-screen flex justify-center lg:justify-start items-center px-4 lg:px-30 text-white"
       style={{
-        backgroundImage: `url(${heroImage})`,
+        backgroundImage: `url(${hero1})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
