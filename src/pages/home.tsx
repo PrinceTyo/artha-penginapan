@@ -2,6 +2,7 @@ import About from "@/sections/about";
 import Hero from "@/sections/hero";
 import Room from "@/sections/room";
 import Amenities from "@/sections/amenities";
+import Location from "@/sections/location";
 import { roomData } from "@/lib/data/roomData";
 import { amenitiesData } from "@/lib/data/amenitiesData";
 
@@ -12,6 +13,7 @@ export default function Home() {
       <About />
       <Room {...roomData} />
       <Amenities {...amenitiesData} />
+      <Location />
     </>
   );
 }
