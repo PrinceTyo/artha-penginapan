@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-// import logoImage from "@/assets/logo.png";
+import logoImage from "@/assets/logo.png";
 import { RxHamburgerMenu } from "react-icons/rx";
 
 export default function Navbar() {
@@ -24,14 +24,7 @@ export default function Navbar() {
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between p-4">
         <a href="#" className="flex items-center gap-2">
-          {/* <img src={logoImage} className="h-12" alt="Logo" /> */}
-          <span
-            className={`text-xl font-semibold ${
-              scrolled ? "text-white" : "text-white"
-            }`}
-          >
-            Artha
-          </span>
+          <img src={logoImage} className="h-12" alt="Logo" />
         </a>
 
         <button
@@ -60,10 +53,10 @@ export default function Navbar() {
               <a
                 href="#"
                 className={`
-                      block py-2 px-4 rounded-md transition
+                      block py-2 px-4 transition
                       ${
                         scrolled
-                          ? "text-white hover:bg-primary hover:text-white transition duration-300"
+                          ? "text-white hover:bg-white hover:text-primary transition duration-300"
                           : "text-white hover:bg-white/10 md:hover:bg-primary md:hover:text-white transition duration-300"
                       }
                     `}
@@ -75,10 +68,10 @@ export default function Navbar() {
               <a
                 href="#about"
                 className={`
-                      block py-2 px-4 rounded-md transition
+                      block py-2 px-4 transition
                       ${
                         scrolled
-                          ? "text-white hover:bg-primary hover:text-white transition duration-300"
+                          ? "text-white hover:bg-white hover:text-primary transition duration-300"
                           : "text-white hover:bg-white/10 md:hover:bg-primary md:hover:text-white transition duration-300"
                       }
                     `}
@@ -90,10 +83,10 @@ export default function Navbar() {
               <a
                 href="#room"
                 className={`
-                      block py-2 px-4 rounded-md transition
+                      block py-2 px-4 transition
                       ${
                         scrolled
-                          ? "text-white hover:bg-primary hover:text-white transition duration-300"
+                          ? "text-white hover:bg-white hover:text-primary transition duration-300"
                           : "text-white hover:bg-white/10 md:hover:bg-primary md:hover:text-white transition duration-300"
                       }
                     `}
@@ -105,10 +98,10 @@ export default function Navbar() {
               <a
                 href="#amenities"
                 className={`
-                      block py-2 px-4 rounded-md transition
+                      block py-2 px-4 transition
                       ${
                         scrolled
-                          ? "text-white hover:bg-primary hover:text-white transition duration-300"
+                          ? "text-white hover:bg-white hover:text-primary transition duration-300"
                           : "text-white hover:bg-white/10 md:hover:bg-primary md:hover:text-white transition duration-300"
                       }
                     `}
@@ -118,12 +111,12 @@ export default function Navbar() {
             </li>
             <li>
               <a
-                href="#amenities"
+                href="#location"
                 className={`
-                      block py-2 px-4 rounded-md transition
+                      block py-2 px-4 transition
                       ${
                         scrolled
-                          ? "text-white hover:bg-primary hover:text-white transition duration-300"
+                          ? "text-white hover:bg-white hover:text-primary transition duration-300"
                           : "text-white hover:bg-white/10 md:hover:bg-primary md:hover:text-white transition duration-300"
                       }
                     `}
@@ -133,12 +126,12 @@ export default function Navbar() {
             </li>
             <li>
               <a
-                href="#amenities"
+                href="#reviews"
                 className={`
-                      block py-2 px-4 rounded-md transition
+                      block py-2 px-4 transition
                       ${
                         scrolled
-                          ? "text-white hover:bg-primary hover:text-white transition duration-300"
+                          ? "text-white hover:bg-white hover:text-primary transition duration-300"
                           : "text-white hover:bg-white/10 md:hover:bg-primary md:hover:text-white transition duration-300"
                       }
                     `}

@@ -22,10 +22,15 @@ export default function Amenities({
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   return (
-    <section className="flex flex-col justify-center items-center py-20">
-      <p className="font-semibold uppercase text-gray-600">{badge}</p>
-      <h2 className="text-4xl">{title}</h2>
-      <div className="flex items-center justify-center gap-4 mt-14">
+    <section
+      className="flex flex-col justify-center items-center py-20 scroll-mt-16"
+      id="amenities"
+    >
+      <p className="font-semibold uppercase text-gray-600 text-center">
+        {badge}
+      </p>
+      <h2 className="text-2xl md:text-4xl text-center">{title}</h2>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center items-center justify-center gap-4 mt-14">
         {amenities.map((item, index) => {
           const Icon = item.icon;
 
@@ -38,6 +43,10 @@ export default function Amenities({
               onMouseEnter={() => setHoveredIndex(index)}
               onMouseLeave={() => setHoveredIndex(null)}
               className={`shadow-md border border-gray-200 px-8 py-6 max-w-90 space-y-4 transition-all duration-300 ${
+                index === amenities.length - 1
+                  ? "md:col-span-2 md:justify-self-center lg:col-span-1"
+                  : ""
+              } ${
                 isHovered || isDefaultActive
                   ? "bg-primary border-primary text-white"
                   : "bg-white border-gray-200 text-gray-800"

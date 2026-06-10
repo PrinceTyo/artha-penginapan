@@ -6,16 +6,16 @@ import {
 } from "react-icons/fa";
 import { RiTwitterXFill } from "react-icons/ri";
 import { Separator } from "@/components/ui/separator";
+import logoImage from "@/assets/logo.png";
 import footerImage from "@/assets/footer.png";
 
 export default function Footer() {
   return (
-    <footer className="bg-primary px-4 py-20 md:px-20 space-y-10 text-white">
+    <footer className="bg-primary px-6 py-20 md:px-20 space-y-10 text-white">
       <div className="grid grid-cols-1 grid-rows-4 md:grid-cols-2 md:grid-rows-2 lg:grid-cols-4 lg:grid-rows-1 gap-10 md:gap-20">
-        <div className="space-y-3">
+        <div className="flex flex-col items-center md:items-start text-center md:text-start space-y-3">
           <div className="flex items-center gap-x-2">
-            {/* <img src={logoImage} alt="Logo" className="h-16" /> */}
-            <h1 className="font-semibold text-3xl">Artha</h1>
+            <img src={logoImage} alt="Logo" className="h-16" />
           </div>
           <blockquote className="italic">
             Artha Property offers modern and strategic living spaces, elegance,
@@ -39,7 +39,7 @@ export default function Footer() {
             </a>
           </div>
         </div>
-        <div className="space-y-3.5">
+        <div className="flex flex-col items-center md:items-start text-center md:text-start space-y-3.5">
           <h1 className="text-2xl font-semibold mb-4">Contact Info</h1>
           <p className="text-md text-white/80">
             Forest View Road No. 8 Pine Valley, Banyuwangi, East Java.
@@ -62,7 +62,7 @@ export default function Footer() {
             </a>
           </p>
         </div>
-        <div className="space-y-1">
+        <div className="flex flex-col items-center md:items-start text-center md:text-start space-y-1">
           <h1 className="text-2xl font-semibold mb-4">Artha</h1>
           <p>
             <a
@@ -118,11 +118,11 @@ export default function Footer() {
         </div>
       </div>
       <Separator />
-      <div className="flex flex-col md:flex-row items-start lg:items-center justify-between text-lg md:text-md">
+      <div className="flex flex-col md:flex-row items-start lg:items-center justify-between text-center md:text-start text-lg md:text-md">
         <p className="text-white/80 w-full md:w-3/4 lg:w-full">
           © 2024 Artha Outdoor Homestay. All rights reserved.
         </p>
-        <div className="flex items-center justify-start md:justify-end gap-x-3 w-full">
+        <div className="flex items-center justify-center md:justify-end gap-x-3 w-full">
           <p>
             <a
               href=""
